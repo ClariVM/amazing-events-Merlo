@@ -142,3 +142,26 @@ textarea{
     outline: none;
 }
 
+/*STATS*/
+
+.container-table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+}
+table{
+    box-shadow:0px 0px 30px #d90368; 
+}
+td{
+    border: solid 2px #d90368;
+    padding: 0px 10px;
+} 
+th{
+    border: solid 2px #d90368;
+    text-align: center;
+    background-color: #d483a9;
+}
+
+
+
