@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-header {
+    background-color: #ffffff;
+    padding: 10px;
+
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav {
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.btn {
+    margin: 10px;
+    background-color: #d90368;
+    border-color: #d90368;
+    box-shadow: 7px 7px 15px #524f4f;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #d90368;
+    font-weight: bold;
+    border-color: #fff;
+}
+
+.carousel-inner img {
+    height: 250px;
+    object-fit: cover;
+}
+
+#carouselExample {
+    box-shadow: 20px 20px 30px #524f4f;
+}
+
+/*MAIN*/
+
+.container-main {
+    margin: 10px;
+}
+
+.container-main .row {
+    margin: 50px;
+}
+
+.category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#input-form {
+    width: 40%;
+    border: none;
+    border-bottom: 2px solid #d90368;
+    outline: none;
+}
+
+
+.card {
+    text-align: center;
+}
+
+.card .btn {
+    display: flex;
+    justify-content: center;
+}
+
+/*FOOTER*/
+
+.container-footer {
+    margin-top: 20px;
+    background-color: #ccfff4;
+    box-shadow: 7px -0.5px 10px #524f4f;
+}
+
+.social-network {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.social-network ion-icon {
+    padding: 10px;
+}
+
+
+.cohort {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 40px;
+}
