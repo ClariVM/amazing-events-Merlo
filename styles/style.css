@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 
-.container-header {
+.header {
     background-color: #ffffff;
     padding: 10px;
-
+    width: 100%;
 }
 
 .logo img {
@@ -32,14 +32,16 @@
     font-weight: bold;
     border-color: #fff;
 }
+
 .btn:active {
-    background-color: #fff !important; 
+    background-color: #fff !important;
     border-color: #fff !important;
 }
 
-.carousel-inner{
+.carousel-inner {
     margin-top: 20px;
 }
+
 #carouselExample {
     box-shadow: 20px 20px 30px #524f4f;
 }
@@ -76,7 +78,7 @@
 
 .card {
     text-align: center;
-    box-shadow:0px 0px 30px #000000;
+    box-shadow: 0px 0px 30px #000000;
     margin: 20px;
 }
 
@@ -87,7 +89,7 @@
 
 /*FOOTER*/
 
-.container-footer {
+footer {
     margin-top: 20px;
     background-color: #ccfff4;
     box-shadow: 7px -0.5px 10px #524f4f;
@@ -97,7 +99,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 30px;
 }
 
 .social-network ion-icon {
@@ -109,12 +110,11 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 40px;
 }
 
 /*CONTACT FORM*/
 
-.container-form{
+.container-form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,24 +122,26 @@
     margin-bottom: 50px;
 }
 
-.container-form form{
+.container-form form {
     margin: 20px;
     display: flex;
     flex-direction: column;
     font-size: 15px;
     font-weight: bold;
 }
-.box-form{
-    box-shadow:0px 0px 30px #d90368;
+
+.box-form {
+    box-shadow: 0px 0px 30px #d90368;
 }
- .box-form input{
+
+.box-form input {
     border: none;
     border-bottom: #d90368 2px solid;
     outline: none;
- }
+}
 
-textarea{
-    height:150px;
+textarea {
+    height: 150px;
     width: 400px;
     border: none;
     border-bottom: #d90368 2px solid;
@@ -148,58 +150,57 @@ textarea{
 
 /*STATS*/
 
-.container-table{
+.container-table {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 50px 0px;
 }
-table{
-    box-shadow:0px 0px 30px #d90368; 
+
+table {
+    box-shadow: 0px 0px 30px #d90368;
 }
-td{
+
+td {
     border: solid 2px #d90368;
     padding: 0px 10px;
-} 
-th{
+}
+
+th {
     border: solid 2px #d90368;
     text-align: center;
     background-color: #d483a9;
 }
 
 /*DETAILS*/
-.container-details{
+.container-details {
     padding: 50px;
     margin: 20px;
-    box-shadow:0px 0px 30px #d90368;
+    box-shadow: 0px 0px 30px #d90368;
 }
 
-.box-photo{
+.box-photo {
     display: flex;
-    justify-content:center;
+    justify-content: center;
 }
-.box-photo img{
-    box-shadow:0px 0px 30px #000000;
+
+.box-photo img {
+    box-shadow: 0px 0px 30px #000000;
     width: 100%;
 }
 
-.box-text{
+.box-text {
     text-align: center;
     font-size: 16px;
-    box-shadow:0px 0px 30px #000000;
+    box-shadow: 0px 0px 30px #000000;
 }
 
-@media only screen and (max-width:991px){
-    .box-photo{
+@media only screen and (max-width:991px) {
+    .box-photo {
         margin-bottom: 30px;
     }
-    .box-text{
+
+    .box-text {
         margin-top: 30px;
     }
 }
-
-
-
-
-
-
