@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0 ;
+    padding: 0 ;
     box-sizing: border-box;
 }
 
@@ -93,6 +93,9 @@ footer {
     margin-top: 20px;
     background-color: #ccfff4;
     box-shadow: 7px -0.5px 10px #524f4f;
+    position: fixed; 
+    bottom:0; 
+    width: 100%;
 }
 
 .social-network {
@@ -154,7 +157,8 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px 0px;
+    margin: 100px 0px;
+    
 }
 
 table {
