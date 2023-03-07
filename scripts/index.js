@@ -19,3 +19,7 @@ function createCards(arrayDatos) {
 
 let pasteCards = createCards(events)
 containerCards.innerHTML = pasteCards
+
+
+
+
