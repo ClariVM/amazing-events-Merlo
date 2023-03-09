@@ -185,12 +185,14 @@ th {
 }
 
 /*DETAILS*/
-.container-details {
+#container-details {
     padding: 50px;
     margin: 20px;
-    box-shadow: 0px 0px 30px #d90368;
+    margin-top: 50px;
 }
-
+div#container-cards{
+    justify-content: center;
+}
 .box-photo {
     display: flex;
     justify-content: center;
@@ -198,12 +200,15 @@ th {
 
 .box-photo img {
     box-shadow: 0px 0px 30px #000000;
-    width: 100%;
+    width: 80%;
 }
 
-.box-text {
+.box-text { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     box-shadow: 0px 0px 30px #000000;
 }
 

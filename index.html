@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
     <link rel="shortcut icon" href="./assets/favicon-AmazingEvents.ico" type="image/x-icon">
     <title>Home</title>
 </head>
+
 
 <body>
     <header>
@@ -39,6 +41,7 @@
                     <span class="visually-hidden">Previous</span>
                 </button>
 
+
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -48,33 +51,24 @@
         </div>
     </header>
 
+
     <main>
         <div class="container-main">
             <div class="row">
-                <div class="col-5 category">
-                    <form>
-                        <input type="checkbox" name="category1" id="category1">
-                        <label for="category">Category</label>
-                        <input type="checkbox" name="category2" id="category2">
-                        <label for="category">Category</label>
-                        <input type="checkbox" name="category3" id="category3">
-                        <label for="category">Category</label>
-                        <input type="checkbox" name="category4" id="category4">
-                        <label for="category">Category</label>
-                        <input type="checkbox" name="category5" id="category5">
-                        <label for="category">Category</label>
-                    </form>
+                <div class="col-5 category" >
+                   <form id="container-categories"></form>
                 </div>
-                <div class="col-7 search">
-                    <input type="text" id="input-form" placeholder="Search">
+                <div class="col-7 search" >
+                    <input type="text" id="search" placeholder="Search">
                     <ion-icon name="search"></ion-icon>
                 </div>
             </div>
             <div id="container-cards">
-                
             </div>
+            <div id="message"></div>
         </div>
     </main>
+
 
     <footer>
         <div class="container footer">
@@ -91,6 +85,7 @@
         </div>
     </footer>
 
+
     <script src=></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -100,5 +95,6 @@
         <script src="./scripts/data.js"></script>
         <script src="./scripts/index.js"></script>
 </body>
+
 
 </html>
