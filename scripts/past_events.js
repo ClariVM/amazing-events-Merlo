@@ -1,3 +1,14 @@
+let urlAPI = "https://mindhub-xj03.onrender.com/api/amazing"
+
+fetch(urlAPI)
+.then(reponse => reponse.json())
+.then(data => {
+    let events = data.events
+    let currentDate = data.currentDate
+
+
+
+
 const containerCards = document.getElementById("container-cards");
 
    
@@ -101,3 +112,4 @@ function almacen() {
 }
 almacen();
 
+})

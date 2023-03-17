@@ -182,8 +182,17 @@ th {
     border: solid 2px #d90368;
     text-align: center;
     background-color: #d483a9;
+    color: #d90368;
+    -webkit-text-stroke: .8px #000;
+    font-size: x-large;
+    text-shadow:2px 2px 5px #000;
 }
 
+.subtitleTable{
+    background-color: #ffd3e8;
+    font-weight: bolder;
+    text-align: center;
+}
 /*DETAILS*/
 #container-details {
     padding: 50px;

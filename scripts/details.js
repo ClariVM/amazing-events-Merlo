@@ -1,3 +1,11 @@
+let urlAPI = "https://mindhub-xj03.onrender.com/api/amazing"
+
+fetch(urlAPI)
+.then(reponse => reponse.json())
+.then(data => {
+    let events = data.events
+    let currentDate = data.currentDate
+
 const queryString = location.search
 
 const params = new URLSearchParams(queryString)
@@ -6,7 +14,7 @@ const params = new URLSearchParams(queryString)
 const idEvents = params.get('id')
 
 
-const eventsDetails = events.find(event => event.id == idEvents)
+const eventsDetails = events.find(event => event._id == idEvents)
 
 const containerDetails = document.getElementById('container-details')
 
@@ -23,3 +31,5 @@ containerDetails.innerHTML = `<div class="row">
    
 </div>
 </div>`
+
+})
