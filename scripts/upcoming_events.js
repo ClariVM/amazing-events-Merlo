@@ -20,7 +20,7 @@ const containerCards = document.getElementById("container-cards");
               <h5 class="card-title">${ev.name}</h5>
               <p class="card-text">${ev.description}</p>
               <h6><ion-icon name="pricetags-outline"></ion-icon>$${ev.price}</h6>
-              <a href="details.html?id=${ev.id}" class="btn btn-primary">See more</a>
+              <a href="details.html?id=${ev._id}" class="btn btn-primary">See more</a>
           </div>
       </div>
       </div>`;}

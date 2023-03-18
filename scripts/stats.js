@@ -79,15 +79,48 @@ fetch(urlAPI)
       })
     }
     
-    console.log(upComingStatics);
-    let catUPS = []
-    for (const iterator of upComingStatics) {
-      if (iterator.includes) {
-        
+    
+     //----PAST EVENTS STATICS BY CATEGORY----//
+     let categoryPEStatics = pastEvents
+    .filter((event) => event.category)
+    .map((rd)=> {
+      return `${rd.category}`
+    })
+    let categoryPEStaticsUnique = [...new Set(categoryPEStatics)]
+
+      let revenuesPast = pastEvents
+      .map((f => {
+        return{
+        name: f.name,
+        category: f.category,
+        assistance: f.assistance,
+        price: f.price,
+        capacity: f.capacity,
+        revenue: f.price * f.assistance
       }
+      }))
+
+    let pastStatics = []
+    for (const category2 of categoryPEStaticsUnique) {
+    let sumaRevenues = 0
+    let totalAssistance = 0
+    let totalCapacity = 0
+      for(element of revenuesPast){
+        if(element.category.includes(category2)){
+          sumaRevenues += element.revenue
+          totalAssistance += element.assistance
+          totalCapacity += element.capacity 
+         
+        }
+      } 
+      pastStatics.push({
+        category : category2,
+        revenues: sumaRevenues,
+        totalPercentage: parseFloat((totalAssistance / totalCapacity) *100).toFixed(2),
+        
+      })
     }
     
-
 
     const tableRender = document.getElementById("table");
     tableRender.innerHTML = ` <thead>
@@ -164,33 +197,39 @@ fetch(urlAPI)
     <td class="subtitleTable">Percentage of attendance</td>
 </tr>
 <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td>${pastStatics[0].category}</td>
+    <td>$${pastStatics[0].revenues}</td>
+<td>${pastStatics[0].totalPercentage}%</td>
 </tr>
 <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+<td>${pastStatics[1].category}</td>
+<td>$${pastStatics[1].revenues}</td>
+<td>${pastStatics[1].totalPercentage}%</td>
 </tr>
 <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+<td>${pastStatics[2].category}</td>
+<td>$${pastStatics[2].revenues}</td>
+<td>${pastStatics[2].totalPercentage}%</td>
 </tr>
 <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+<td>${pastStatics[3].category}</td>
+<td>$${pastStatics[3].revenues}</td>
+<td>${pastStatics[3].totalPercentage}%</td>
 </tr>
 <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+<td>${pastStatics[4].category}</td>
+<td>$${pastStatics[4].revenues}</td>
+<td>${pastStatics[4].totalPercentage}%</td>
 </tr>
 <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+<td>${pastStatics[5].category}</td>
+<td>$${pastStatics[5].revenues}</td>
+<td>${pastStatics[5].totalPercentage}%</td>
+</tr>
+<tr>
+<td>${pastStatics[6].category}</td>
+<td>$${pastStatics[6].revenues}</td>
+<td>${pastStatics[6].totalPercentage}%</td>
 </tr>`;
+
   });

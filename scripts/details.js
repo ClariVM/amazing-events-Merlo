@@ -9,10 +9,10 @@ fetch(urlAPI)
 const queryString = location.search
 
 const params = new URLSearchParams(queryString)
-
+console.log(params);
 
 const idEvents = params.get('id')
-
+console.log(idEvents);
 
 const eventsDetails = events.find(event => event._id == idEvents)
 
