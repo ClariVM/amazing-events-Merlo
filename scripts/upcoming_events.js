@@ -106,6 +106,8 @@ function almacen() {
       containerCards.innerHTML = createCards(checkedElements);            
         let filterCrossedCheck = checkedElements.filter(check => check.name.toLowerCase().includes(searchAlgo.toString()));            
         containerCards.innerHTML = createCards(filterCrossedCheck);        
+       }if(containerCards.innerHTML == ''){
+        containerCards.innerHTML = `<img src="./assets/NotfoundResults.gif" id="fotoMensaje" alt="">`;
        }
   }
   almacen();
