@@ -23,12 +23,15 @@ containerDetails.innerHTML = `<div class="row">
     <img src="${eventsDetails.image}" alt="${eventsDetails.name}"/>
 </div>
 <div class="col-12 col-sm-12 col-md-12 col-lg-6 box-text">
-    <h6>${eventsDetails.category}<h6>
-    <h1>${eventsDetails.name}</h1>
-    <h4>${eventsDetails.description}<h4>
-    <h6>${eventsDetails.place}<h6>
-    <h6>${eventsDetails.date}<h6>
-   
+    <div class="name-event"><h1>${eventsDetails.name}</h1></div>
+    <span class= "description-event">${eventsDetails.description}</span>
+    <div class="event-info">
+
+    <h6><ion-icon name="star-outline" style="color:#d90368"></ion-icon> Category: ${eventsDetails.category}<h6>
+    <h6><ion-icon name="navigate-outline" style="color:#d90368"></ion-icon> Place: ${eventsDetails.place}<h6>
+    <h6><ion-icon name="calendar-outline" style="color:#d90368"></ion-icon> Date: ${eventsDetails.date}<h6>
+    <h6><ion-icon name="pricetags-outline" style="color:#d90368"></ion-icon> Price: $${eventsDetails.price}<h6>
+    </div>
 </div>
 </div>`
 
